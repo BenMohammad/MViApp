@@ -1,4 +1,4 @@
-package com.fukuni.mviapp.ui
+package com.fukuni.mviapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
