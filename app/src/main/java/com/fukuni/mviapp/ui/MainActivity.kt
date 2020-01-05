@@ -1,7 +1,8 @@
-package com.fukuni.mviapp
+package com.fukuni.mviapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.fukuni.mviapp.R
 
 class MainActivity : AppCompatActivity() {
 
