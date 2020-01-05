@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.fukuni.mviapp.model.BlogPost
+import com.fukuni.mviapp.model.User
 import com.fukuni.mviapp.repository.Repository
 import com.fukuni.mviapp.ui.main.state.MainStateEvent
 import com.fukuni.mviapp.ui.main.state.MainViewState
@@ -45,6 +46,12 @@ class MainViewModel : ViewModel() {
     fun setBlogListData(blogPosts: List<BlogPost>) {
         val update = getCurrentViewStateOrNew()
         update.blogPosts = blogPosts
+        _viewState.value = update
+    }
+
+    fun setUser(user: User) {
+        val update =  getCurrentViewStateOrNew()
+        update.user = user
         _viewState.value = update
     }
 
